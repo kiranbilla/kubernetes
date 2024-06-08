@@ -1,0 +1,37 @@
+☸ Analyzing logs:-
+
+1.kubectl logs <pod-name> - This command retrieves the logs of a specific pod.
+
+2. kubectl logs -f <pod-name> - This command streams the logs of a specific pod in real-time, useful for monitoring logs as they occur.
+
+3. kubectl logs <pod-name> <container-name> - This command retrieves the logs of a specific container running in a pod with multiple containers.
+
+4. kubectl logs -f <pod-name> <container-name> - This command streams the logs of a specific container running in a pod with multiple containers in real-time.
+
+5. kubectl logs --tail=<number-of-lines> <pod-name> - This command retrieves the specified number of lines from the end of the logs of a specific pod.
+
+6. kubectl logs --since=<time> <pod-name> - This command retrieves the logs of a specific pod since a specified time. The time parameter can be specified in the format of 10s for 10 seconds, 1m for 1 minute, 1h for 1 hour, or 1d for 1 day.
+
+7. kubectl logs --timestamps <pod-name> - This command adds timestamps to the logs of a specific pod.
+
+8. kubectl logs --previous <pod-name> - This command retrieves the logs of the previous container instance of a specific pod. This is useful for debugging issues after a pod has been restarted.
+
+9. kubectl logs <pod-name> -c <container-name> - This command retrieves the logs of a specific container in a specific pod.
+
+10. kubectl logs <pod-name> -n <namespace-name> - This command retrieves the logs of a specific pod in a specific namespace.
+
+11. kubectl logs <pod-name> --all-containers - This command retrieves the logs of all containers running in a specific pod.
+
+☸ Debugging Container Image
+
+1. kubectl run -i --tty --image=<image-name> -- sh - This command starts a new pod using the specified container image, and opens an interactive shell session inside the pod. You can use this shell session to investigate issues with the container image.
+
+2. kubectl exec -it <pod-name> -- sh - This command opens an interactive shell session inside an existing pod. You can use this shell session to investigate issues with the container image running inside the pod.
+
+3. kubectl describe pod <pod-name> - This command displays detailed information about a specific pod, including the image name and version. You can use this command to verify that the correct container image is being used.
+
+4. kubectl logs <pod-name> - This command displays the logs of a specific pod. You can use this command to investigate any error messages or warnings that might be related to the container image.
+
+5. kubectl port-forward <pod-name> <local-port>:<remote-port> - This command forwards a local port to a port on the container running inside a specific pod. 
+
+6. kubectl exec -it <pod-name> -- <command> - This command allows you to execute a specific command inside a container running inside a pod.
