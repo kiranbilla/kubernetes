@@ -1,0 +1,46 @@
+#Scenario-based related to #Docker:-
+
+1. Dockerfile Optimization:
+- You notice that your Docker images are too large, causing slow deployments. How would you optimize a Dockerfile to reduce the image size?
+
+2. Container Management:
+ - A container running a critical application crashes frequently. What steps would you take to troubleshoot and resolve the issue?
+
+3. Persistent Storage:
+- You need to ensure that data within a container persists even after the container is destroyed. How would you achieve persistent storage in Docker?
+
+4. Networking in Docker:
+- You need multiple Docker containers to communicate with each other on different hosts. How would you configure the networking for this scenario?
+
+5. Service Scalability:
+- Your application needs to handle increased traffic during peak times. How would you set up Docker to scale your application services?
+
+6. Security Best Practices:
+- You need to secure your Docker environment to prevent vulnerabilities. What security measures would you implement for your Docker containers?
+
+7. CI/CD Integration:
+- You want to automate the build, test, and deployment of your Dockerized application. How would you integrate Docker with a CI/CD pipeline?
+
+8. Handling State and Stateless Applications:
+- You have both stateful and stateless applications that need to be containerized. How would you handle the differences in deploying stateful vs. stateless applications with Docker?
+
+9. Disaster Recovery:
+- A critical containerized service goes down, and you need to restore it as quickly as possible. What is your disaster recovery plan for Dockerized applications?
+
+10. Orchestration with Kubernetes:
+- You need to orchestrate and manage multiple Docker containers across different environments. How would you use Kubernetes to manage and orchestrate your Docker containers?
+
+11. Multi-Stage Builds:
+- You want to reduce build times and improve efficiency for your Docker images. How would you implement multi-stage builds in your Dockerfile?
+
+12. Monitoring and Logging:
+- You need to set up monitoring and logging for your Docker containers to ensure smooth operations. What tools and strategies would you use to monitor and log Docker container activities?
+
+13. Microservices Architecture:
+- You are transitioning from a monolithic application to a microservices architecture using Docker. What are the steps and considerations for containerizing and deploying microservices?
+
+14. Docker Swarm vs. Kubernetes:
+- You need to choose between Docker Swarm and Kubernetes for container orchestration. What are the key differences between Docker Swarm and Kubernetes, and which would you choose for your project?
+
+15. Automated Image Vulnerability Scanning:
+- Ensuring that your Docker images are free from known vulnerabilities. What tools and practices would you use to automate the scanning of Docker images for vulnerabilities?
