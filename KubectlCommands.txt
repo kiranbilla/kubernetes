@@ -1,0 +1,48 @@
+
+☸ Kubernetes troubleshooting Commands:-
+
+1. kubectl get pods - This command will show the status of all pods in the current namespace.
+
+2. kubectl describe pod <pod-name> - This command will give detailed information about the specified pod, including its current status, events, and container statuses.
+
+3. kubectl logs <pod-name> <container-name> - This command will print the logs of the specified container within the specified pod.
+
+4. kubectl exec -it <pod-name> <container-name> /bin/bash - This command will open a shell inside the specified container within the specified pod, which can be useful for debugging.
+
+5. kubectl get events - This command will show the recent events that have occurred in the cluster, which can help identify any issues.
+
+6. kubectl describe node <node-name> - This command will provide detailed information about the specified node, including its status and any issues that might be affecting it.
+
+7. kubectl get services - This command will show the status of all services in the current namespace.
+
+8. kubectl describe service <service-name> - This command will provide detailed information about the specified service, including its current status and any issues that might be affecting it.
+
+9. kubectl get deployments - This command will show the status of all deployments in the current namespace.
+
+10. kubectl describe deployment <deployment-name> - This command will provide detailed information about the specified deployment, including its current status and any issues that might be affecting it.
+
+☸ kubectl Commands:-
+
+1. kubectl version - This command displays the version of both the Kubectl client and the Kubernetes cluster it is connected to.
+
+2. kubectl cluster-info - This command displays information about the Kubernetes cluster, including the cluster API endpoint.
+
+3. kubectl get - This command retrieves resources such as pods, services, deployments, and nodes.
+
+4. kubectl create - This command creates resources such as pods, services, deployments, and namespaces.
+
+5. kubectl apply - This command applies changes to existing resources or creates new ones based on a YAML or JSON file.
+
+6. kubectl delete - This command deletes resources such as pods, services, deployments, and namespaces.
+
+7. kubectl logs - This command retrieves logs from a container running inside a pod.
+
+8. kubectl exec - This command allows you to execute a command inside a container running inside a pod.
+
+9. kubectl port-forward - This command creates a tunnel between a local machine and a pod in order to access a service running inside the pod.
+
+10. kubectl describe - This command provides detailed information about a Kubernetes resource, such as a pod, service, or deployment.
+
+11. kubectl edit - This command allows you to edit the configuration of a Kubernetes resource.
+
+12. kubectl rollout - This command allows you to manage rolling updates for deployments.
