@@ -1,0 +1,94 @@
+#Common Errors in #Kubernetes and Tips on #Troubleshooting Them:-
+
+1. Pod Security Policies:
+ - Check PodSecurityPolicy (PSP) violations.
+ - Adjust PSP or use PodSecurity admission controllers.
+
+2. Kubelet Certificate Rotation:
+ - Monitor kubelet certificate expiration.
+ - Rotate certificates if needed.
+
+3. Cluster Autoscaler Issues:
+ - Verify autoscaler configuration.
+ - Check node group scaling policies.
+
+4. ServiceAccount Token Expiration:
+ - Ensure service account tokens are not expired.
+ - Rotate service account tokens if needed.
+
+5. Scheduler Issues:
+ - Inspect scheduler logs for errors.
+ - Check for node affinity and anti-affinity issues.
+
+6. Readiness and Liveness Probe Failures:
+ - Review pod configurations for probes.
+ - Check probe logs and adjust thresholds.
+
+7. Inconsistent API Versions:
+ - Verify client and server API versions match.
+ - Use compatible kubectl versions.
+
+8. Kube-dns Service Missing:
+ - Ensure CoreDNS (or kube-dns) service is running.
+ - Validate DNS settings in kubelet configurations.
+
+9. ImageRegistry Authentication:
+ - Check image pull secrets in pod specifications.
+ - Verify registry credentials.
+
+10. HorizontalPodAutoscaler Not Scaling:
+ - Check metrics server and HPA configurations.
+ - Inspect HPA events and logs.
+
+11. Pod Affinity/Anti-affinity Issues:
+ - Verify pod affinity/anti-affinity rules.
+ - Check node labels for affinity.
+
+12. Custom Resource Definitions (CRD) Issues:
+ - Validate CRD creation and versions.
+ - Check for CRD controller errors.
+
+13. Resource Quotas Exceeded:
+ - Review resource quotas with kubectl describe.
+ - Adjust quotas or request more resources.
+
+14. RuntimeClass Configuration Issues:
+ - Verify RuntimeClass in PodSpec.
+ - Check container runtime compatibility.
+
+15. Secrets Decoding Errors:
+ - Validate encoded secrets.
+ - Ensure proper base64 encoding.
+
+16. Invalid Ingress Controller Configuration:
+ - Inspect Ingress controller logs.
+ - Verify controller configurations.
+
+17. Pod Priority and Preemption Issues:
+ - Check priorityClass in PodSpec.
+ - Verify kube-scheduler settings.
+
+18. Node Network Connectivity Issues:
+ - Check node network configurations.
+ - Verify firewall rules on nodes.
+
+19. Service External IP Not Assigned:
+ - Check cloud provider integration.
+ - Verify LoadBalancer service configurations.
+
+20. PodSecurityContext Misconfigurations:
+ - Validate pod security context settings.
+ - Ensure compatibility with node settings.
+
+21. Kubelet Certificate Rotation Issues:
+ - Monitor and rotate kubelet certificates.
+ - Verify certificate expiration dates.
+
+22. Volume Plugin Not Loaded:
+ - Check kubelet logs for volume plugin errors.
+ - Verify plugin installation and configuration.
+
+23. NodeDrain Failures:
+ - Check node drain status with kubectl drain.
+ - Investigate any evicted pods.
+
