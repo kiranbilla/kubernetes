@@ -1,0 +1,71 @@
+#Kubernetes #Networking:-
+
+Kubernetes (K8s) networking is a complex but critical aspect of deploying and managing containerized applications. There are several networking solutions (also known as Container Network Interfaces or CNIs) that Kubernetes supports to handle the networking needs.
+
+Types of kubernetes networking:-
+ total 8 types of networks 
+1. Calico
+- Type: Network policy and overlay network provider.
+- Key Features:
+ - Uses BGP (Border Gateway Protocol) for routing.
+ - Supports network policies for security.
+ - Can operate in both layer 3 (routing) and layer 2 (bridging) modes.
+ - Supports both IPv4 and IPv6.
+ - Can be used with or without an overlay network (pure IP networking).
+
+2. Flannel
+- Type: Simple and easy-to-configure overlay network provider.
+- Key Features:
+ - Uses VXLAN or other backend protocols for the overlay network.
+ - Designed to be simple and robust.
+ - Provides basic networking without many advanced features.
+ - Commonly used in less complex setups.
+
+3. Weave
+- Type: Overlay network provider.
+- Key Features:
+ - Uses a mesh networking approach.
+ - Supports encryption out-of-the-box.
+ - Provides network policy features.
+ - Allows multicast networking.
+ - Easy to set up and manage.
+
+4. Cilium
+- Type: Advanced networking and security solution using eBPF (extended Berkeley Packet Filter).
+- Key Features:
+ - Provides deep visibility and control over network traffic.
+ - Uses eBPF for efficient packet processing and security enforcement.
+ - Supports network policies and monitoring.
+ - Can perform Layer 7 (application layer) filtering.
+ - Highly scalable and suitable for complex environments.
+
+5. Kube-Router
+- Type: All-in-one solution for networking, network policy, and load balancing.
+- Key Features:
+ - Integrates with BGP for routing.
+ - Provides network policies.
+ - Can be used for service proxying and load balancing.
+ - Combines multiple functionalities into a single binary.
+
+6. OVN (Open Virtual Network)
+- Type: Network virtualization system.
+- Key Features:
+ - Built on top of Open vSwitch (OVS).
+ - Provides virtual networking features.
+ - Supports network policies.
+
+7. Canal
+- Type: Combination of Calico and Flannel.
+- Key Features:
+ - Uses Flannel for networking and Calico for network policies.
+ - Provides the best of both worlds: simplicity of Flannel and the advanced features of Calico.
+ - Suitable for environments needing both overlay networking and network policies.
+
+8. Multus
+- Type: Meta CNI plugin.
+- Key Features:
+ - Allows attaching multiple network interfaces to pods.
+ - Supports the use of multiple CNIs in a single Kubernetes cluster.
+ - Useful for complex networking requirements where pods need multiple network connections.
+Note:-
+Choosing the right CNI depends on your specific requirements, such as ease of setup, performance, scalability, security, and the complexity of your network policies.
