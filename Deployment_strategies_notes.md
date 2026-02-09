@@ -27,13 +27,13 @@ In Kubernetes (k8s), there are several deployment strategies you can use to upda
 - #Use Case: Suitable for applications where you want to test the new version with a subset of users before full rollout.
 - #Trade-offs: More complex to implement but allows for controlled testing and feedback.
 
-5. # A/B Testing:
+5. ## A/B Testing:
 
 - #Description: Similar to Canary, but focuses on testing two different versions to see which performs better.
 - #Use Case: Useful for feature testing and performance comparison.
 - #Trade-offs: Requires detailed monitoring and analysis.
 
-6. # Shadow Deployment:
+6. ## Shadow Deployment:
 
 - #Description: Sends a copy of real user traffic to a new version while keeping the user interaction with the old version. The new version does not affect the actual user experience.
 - #Use Case: Useful for testing new features or versions under real user load without affecting the end users.
